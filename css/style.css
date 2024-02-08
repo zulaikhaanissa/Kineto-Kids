@@ -1,14 +1,14 @@
 :root {
     --primary: #251f0e;
-    --bg: #e2c5f3;
+    --bg: #EEEFFD;
     --white: #fff;
     --white-milk: #faf1e4;
     --black: #000;
     --black-light: #1b1c1e;
     --dark-blue: #1b102e;
     --light-cream:#fff4f0 ;
-    --blue-soft: #8999f8;
-    --cream-white: #6130bb;
+    --blue-soft:#E8E9FF;
+    --cream-white: #f5dffa;
     --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
 }
   
@@ -227,7 +227,7 @@ body {
     bottom: 0;
     background: linear-gradient(
       0deg,
-      rgba(226, 197, 243,1) 3%,
+      rgba(238, 239, 253,1) 3%,
       rgba(255, 242, 183, 0) 30%
     );
 }
@@ -468,6 +468,7 @@ body {
     border-radius: 20px;
     margin-top: 0;
     padding-top: 0;
+    background-color: #FDF0E5;
 }
   
 .menu .menu-card {
