@@ -1,0 +1,275 @@
+:root {
+    --primary: #422415;
+    --bg: #fff4f0;
+    --white: #fff;
+    --white-milk: #faf1e4;
+    --black: #000;
+    --black-light: #1b1c1e;
+    --dark-choco: #422415;
+    --light-cream:#fff4f0 ;
+    --cream-dark: #cda45e;
+    --cream-white: #e1c2a2;
+    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/*About*/
+.story {
+  margin-top: 1rem;
+  padding: 3rem 0;
+  background: #fff;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+
+.row {
+  display: flex;
+  margin-left: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  /* flex-wrap: wrap; */
+}
+
+.story .row .story-img {
+  flex: 1 1 8rem;
+  order: 1;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.story .row .story-img img {
+  width: 660px;
+  height: 600px;
+  margin-left: -1.6rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  margin-right: 0;
+  padding-top: 28px;
+}
+
+.story .row .story-img2 img {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-left: 7rem;
+    margin-left: 7rem;
+
+  }
+
+.story .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story .row .content h3 {
+  padding-left:1.5rem ;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-weight: 300;
+}
+
+.story .row .content h4 {
+    padding-left:0 ;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+
+.story .row .content p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0px;
+  text-align: justify;
+  justify-items: center;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+/* Team*/
+
+.chefs .section-title p{
+    font-size: 3rem;
+    padding: 0;
+    color: #422414;
+    font-family:"Source Sans 3", sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+  
+.chefs .member {
+   text-align: center;
+   background: var(--bg);
+   position: relative;
+   overflow: hidden;
+   margin-bottom:10px;
+   margin-top: 0.5px;
+
+  
+}
+  
+.chefs .member img{
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    overflow: clip;
+    
+    
+}
+  
+  
+.chefs .member .member-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 1rem;
+    top: 0;
+    left: 1rem;
+    right: 1rem;
+    transition: 0.2s;
+    padding:0;
+    display:flex;
+}
+  
+.chefs .member .member-info-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    transition: bottom 0.4s;
+}
+  
+.chefs .member .member-info-content h4 {
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #fff;
+}
+  
+.chefs .member .member-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+  
+.chefs .member .social {
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    right: 0;
+    height: 40px;
+    transition: bottom ease-in-out 0.4s;
+   text-align: center;
+}
+  
+.chefs .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+}
+  
+.chefs .member .social a:hover {
+    color: #cda45e;
+}
+  
+.chefs .member .social i {
+    font-size: 14px;
+    margin: 0 2px;
+}
+  
+.chefs .member:hover .member-info {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 5;
+    transition: 0.4s;
+}
+ 
+.chefs .member:hover .member-info-content {
+    bottom: 60px;
+    transition: bottom 0.4s;
+}
+  
+.chefs .member:hover .social {
+    bottom: 0;
+    transition: bottom ease-in-out 0.4s;
+}
+
+
+/*tablet*/
+@media (max-width: 758px){
+    .story .row {
+        flex-wrap: wrap;
+    }
+    .story .row .story-img2 img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .story .row .content {
+        padding: 0;
+    }
+    .story .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .story .row .content h4 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .story .row .content p {
+        font-size: 1.6rem;
+    }
+    
+    .story .row .story-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+/*Mobile Phone*/
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  
+    .story .row .content h4 {
+        margin-top: 1rem;
+        font-size: 2rem;
+
+    }
+    .story .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+
+    }
+
+}
