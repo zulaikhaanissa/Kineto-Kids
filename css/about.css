@@ -272,4 +272,30 @@
 
     }
 
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story .row .story-img img {
+        width: 80%; 
+        max-width: 300px; 
+        height: auto;
+        margin-bottom: 1rem; 
+    }
+    
+    .story .row .content {
+        text-align: center; 
+    }
+    
+    .story .row .story-img .content h3 {
+        font-size: 1.5rem; 
+    }
+    
+    .story .row .story-img .content h4 {
+        font-size: 1rem; 
+        margin-top: 0.5rem; 
+    }
+
 }
